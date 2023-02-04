@@ -1,0 +1,25 @@
+# ===================================
+#  Condition Attribute Definitions
+# ===================================
+
+attributes:
+
+    code:
+        label: webmaxx.forms::lang.notify.conditions.feedback_form_attribute.attributes.code
+        type: string
+
+    name:
+        label: webmaxx.forms::lang.notify.conditions.feedback_form_attribute.attributes.name
+        type: string
+
+    phone:
+        label: webmaxx.forms::lang.notify.conditions.feedback_form_attribute.attributes.phone
+        type: string
+
+    email:
+        label: webmaxx.forms::lang.notify.conditions.feedback_form_attribute.attributes.email
+        type: string
+
+    page:
+        label: webmaxx.forms::lang.notify.conditions.feedback_form_attribute.attributes.page
+        type: string

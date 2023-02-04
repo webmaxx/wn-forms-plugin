@@ -1,0 +1,57 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    is_new:
+        label: webmaxx.forms::lang.models.feedback.list.columns.is_new.label
+        type: partial
+        path: ~/plugins/webmaxx/forms/models/feedback/_is_new_column.htm
+        width: 50px
+        searchable: false
+        sortable: true
+
+    code:
+        label: webmaxx.forms::lang.models.feedback.list.columns.code.label
+        type: text
+        default: '-'
+        searchable: true
+        sortable: true
+
+    name:
+        label: webmaxx.forms::lang.models.feedback.list.columns.name.label
+        type: text
+        default: '-'
+        searchable: true
+        sortable: true
+
+    phone:
+        label: webmaxx.forms::lang.models.feedback.list.columns.phone.label
+        type: text
+        default: '-'
+        searchable: true
+        sortable: true
+
+    email:
+        label: webmaxx.forms::lang.models.feedback.list.columns.email.label
+        type: text
+        default: '-'
+        searchable: true
+        sortable: true
+
+    created_at:
+        label: webmaxx.forms::lang.models.feedback.list.columns.created_at.label
+        type: datetime
+        searchable: true
+        sortable: true
+
+    page:
+        label: webmaxx.forms::lang.models.feedback.list.columns.page.label
+        type: text
+        searchable: true
+        sortable: true
+        invisible: true
+
+    id:
+        label: webmaxx.forms::lang.models.feedback.list.columns.id.label
+        searchable: true

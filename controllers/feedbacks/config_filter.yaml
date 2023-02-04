@@ -1,0 +1,25 @@
+# ===================================
+# Filter Scope Definitions
+# ===================================
+
+scopes:
+
+    id:
+        label: webmaxx.forms::lang.models.feedback.list.filters.id
+        type: number
+        step: 1
+        min: 1
+        conditions: id = ':filtered'
+
+    code:
+        label: webmaxx.forms::lang.models.feedback.list.filters.code
+        type: group
+        modelClass: Webmaxx\Forms\Models\Feedback
+        conditions: code in (:filtered)
+        nameFrom: code
+        options: getCodesOptions
+
+    created_at:
+        label: webmaxx.forms::lang.models.feedback.list.filters.created_at
+        type: daterange
+        conditions: created_at >= ':after' AND created_at <= ':before'

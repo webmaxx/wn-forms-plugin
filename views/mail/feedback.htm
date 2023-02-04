@@ -1,0 +1,47 @@
+subject = "[Forms] Feedback"
+description = "Feedback form"
+layout = "system"
+
+==
+
+Feedback №: {{ id ?: '-' }}
+
+Form code   : {{ code ?: '-' }}
+
+Name        : {{ name ?: '-' }}
+
+Phone       : {{ phone ?: '-' }}
+
+E-mail      : {{ email ?: '-' }}
+
+Comment :
+
+"{{ comment ?: '-' }}"
+
+
+The page from which the message was sent: {{ page ?: '-' }}
+
+==
+
+{% partial 'promotion' body %}
+Feedback №: {{ id ?: '-' }}
+{% endpartial %}
+
+{% partial 'table' body %}
+|             |                      |
+| ----------- | -------------------- |
+| Form code   | {{ code ?: '-' }}    |
+|             |                      |
+| Name        | {{ name ?: '-' }}    |
+| Phone       | {{ phone ?: '-' }}   |
+| E-mail      | {{ email ?: '-' }}   |
+{% endpartial %}
+
+{% partial 'panel' body %}
+<p><b>Comment:</b></p>
+<p>{{ comment ?: '-' }}</p>
+{% endpartial %}
+
+{% partial 'panel' body %}
+The page from which the message was sent: <a href="{{ page }}" target="_blank">{{ page ?: '-' }}</a>
+{% endpartial %}

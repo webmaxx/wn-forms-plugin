@@ -1,0 +1,9 @@
+# ===================================
+#  Field Definitions
+# ===================================
+
+fields:
+
+    code:
+        label: webmaxx.forms::lang.notify.conditions.form_code.fields.code
+        type: text

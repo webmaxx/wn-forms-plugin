@@ -1,0 +1,76 @@
+{% set fields = __SELF__.fields %}
+
+<form
+    id="{{ __SELF__.id }}"
+    class="form"
+    data-request="{{ __SELF__ }}::onSubmitFeedbackForm"
+    data-request-validate
+    data-request-flash
+    role="form"
+>
+    {% if fields.name.use %}
+    <div class="m-y-sm">
+        <input
+            class="form-control"
+            type="text"
+            name="name"
+            value=""
+            placeholder="Name"
+        >
+        <div class="small text-danger" data-validate-for="name"></div>
+    </div>
+    {% endif %}
+
+    {% if fields.phone.use %}
+    <div class="m-y-sm">
+        <input
+            class="form-control"
+            type="tel"
+            name="phone"
+            value=""
+            placeholder="Phone"
+        >
+        <div class="small text-danger" data-validate-for="phone"></div>
+    </div>
+    {% endif %}
+
+    {% if fields.email.use %}
+    <div class="m-y-sm">
+        <input
+            class="form-control"
+            type="email"
+            name="email"
+            value=""
+            placeholder="E-mail"
+        >
+        <div class="small text-danger" data-validate-for="email"></div>
+    </div>
+    {% endif %}
+
+    {% if fields.comment.use %}
+    <div class="m-y-sm">
+        <textarea
+            class="form-control"
+            name="comment"
+            placeholder="Comment"
+        ></textarea>
+        <div class="small text-danger" data-validate-for="comment"></div>
+    </div>
+    {% endif %}
+
+    <div class="m-y-sm">
+        <button
+            class="btn btn btn-primary"
+            type="submit"
+            data-attach-loading
+        >
+            Send
+        </button>
+    </div>
+</form>
+
+<script>
+(function() {
+    document.getElementById('{{ __SELF__.id }}').addEventListener('ajaxDone', (e) => e.target.reset());
+})();
+</script>

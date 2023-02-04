@@ -1,0 +1,51 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    code:
+        label: webmaxx.forms::lang.models.feedback.form.fields.code.label
+        type: text
+        span: left
+        disabled: true
+
+    id:
+        label: webmaxx.forms::lang.models.feedback.form.fields.id.label
+        type: text
+        span: right
+        disabled: true
+
+    page:
+        label: webmaxx.forms::lang.models.feedback.form.fields.page.label
+        type: text
+        span: full
+        disabled: true
+
+    _data:
+        label: webmaxx.forms::lang.models.feedback.form.fields._data.label
+        type: section
+        span: full
+
+    name:
+        label: webmaxx.forms::lang.models.feedback.form.fields.name.label
+        type: text
+        span: left
+        disabled: true
+
+    phone:
+        label: webmaxx.forms::lang.models.feedback.form.fields.phone.label
+        type: text
+        span: left
+        disabled: true
+
+    email:
+        label: webmaxx.forms::lang.models.feedback.form.fields.email.label
+        type: text
+        span: right
+        disabled: true
+
+    comment:
+        label: webmaxx.forms::lang.models.feedback.form.fields.comment.label
+        type: textarea
+        span: full
+        disabled: true

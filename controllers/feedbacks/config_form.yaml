@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: 'webmaxx.forms::lang.models.feedback.label'
+
+# Model Form Field configuration
+form: $/webmaxx/forms/models/feedback/fields.yaml
+
+# Model Class name
+modelClass: Webmaxx\Forms\Models\Feedback
+
+# Default redirect location
+defaultRedirect: webmaxx/forms/feedbacks
+
+# Create page
+create:
+    title: webmaxx.forms::lang.models.feedback.form.create.title
+    redirect: webmaxx/forms/feedbacks/update/:id
+    redirectClose: webmaxx/forms/feedbacks
+
+# Update page
+update:
+    title: webmaxx.forms::lang.models.feedback.form.update.title
+    redirect: webmaxx/forms/feedbacks
+    redirectClose: webmaxx/forms/feedbacks
+
+# Preview page
+preview:
+    title: webmaxx.forms::lang.models.feedback.form.preview.title

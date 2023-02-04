@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: 'webmaxx.forms::lang.models.record.label'
+
+# Model Form Field configuration
+form: $/webmaxx/forms/models/record/fields.yaml
+
+# Model Class name
+modelClass: Webmaxx\Forms\Models\Record
+
+# Default redirect location
+defaultRedirect: webmaxx/forms/records
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: webmaxx/forms/records/update/:id
+    redirectClose: webmaxx/forms/records
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: webmaxx/forms/records
+    redirectClose: webmaxx/forms/records
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title
